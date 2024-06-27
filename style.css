@@ -1,0 +1,129 @@
+:root {
+    --black-color-one: #000;
+    --black-color-two: #111;
+    --black-color-main: #010B13;
+    --light-yellow: #F9F871;
+    --dark-blue: #3576f8;
+    --theme-text-color: #e3ddc7;
+    --theme-color-one: #2a3a5f;
+    --theme-color-two: #010b13;
+    --theme-color-three: #4d76a0;
+    --lato-font: "Lato", sans-serif;
+    --poppins-font: "Poppins", sans-serif;
+    --roboto-fonts: "Roboto", sans-serif;
+    --blur-background-color: rgba(1, 6, 15, 0.5); /* Semi-transparent black */
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color: var(--black-color-main);
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--poppins-font); /* Set a default font family */
+}
+
+.yellow-text {
+    color: var(--dark-blue);
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px; /* Apply padding equally on both sides */
+    height: 80px;
+    background-color: transparent; /* Set background color */
+    z-index: 9999;
+    position: fixed; /* Fixed position to stay at the top */
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#toggle-btn {
+    width: 25px;
+    display: none;
+}
+
+#xmark {
+    display: none;
+    width: 25px;
+}
+
+.logo a {
+    color: white;
+    font-weight: 700;
+    text-decoration: none; /* Remove underline from logo */
+    font-size: 1.5rem; /* Adjust font size */
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+    list-style-type: none; /* Remove default list styles */
+    margin-right: 80px; /* Margin for the last menu item */
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none; /* Remove underline from menu links */
+    padding: 10px; /* Add padding around menu items */
+    transition: all 0.3s ease; /* Smooth transition effect */
+}
+
+/* HOME SECTION */
+
+/* HOME SECTION */
+
+@media (max-width: 880px) {
+    .navbar {
+        padding: 0 15px;
+    }
+    .menu {
+        margin-right: 30px;
+        gap: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        position: absolute;
+        right: -102%;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--blur-background-color); /* Apply semi-transparent background color */
+        backdrop-filter: blur(10px); /* Apply blur effect */
+        margin: 0;
+        gap: 30px;
+        transition: 0.3s ease-in-out;
+    }
+
+    .menu li a {
+        padding: 0;
+    }
+
+    .menu.active {
+        right: 0;
+    }
+
+    #toggle-btn {
+        display: block;
+        margin-right: 30px;
+    }
+
+    #xmark {
+        display: block;
+        position: absolute;
+        top: 6%;
+        right: 8%;
+    }
+}
