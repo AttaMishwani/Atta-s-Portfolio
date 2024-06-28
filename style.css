@@ -11,10 +11,12 @@
     --lato-font: "Lato", sans-serif;
     --poppins-font: "Poppins", sans-serif;
     --roboto-fonts: "Roboto", sans-serif;
-    --blur-background-color: rgba(1, 6, 15, 0.5); /* Semi-transparent black */
+    --blur-background-color: rgba(1, 6, 15, 0.5);
+    /* Semi-transparent black */
 }
 
-body, html {
+body,
+html {
     width: 100%;
     height: 100%;
     background-color: var(--black-color-main);
@@ -22,7 +24,8 @@ body, html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: var(--poppins-font); /* Set a default font family */
+    font-family: var(--poppins-font);
+    /* Set a default font family */
 }
 
 .yellow-text {
@@ -35,11 +38,14 @@ body, html {
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    padding: 0 50px; /* Apply padding equally on both sides */
+    padding: 0 50px;
+    /* Apply padding equally on both sides */
     height: 80px;
-    background-color: transparent; /* Set background color */
+    background-color: transparent;
+    /* Set background color */
     z-index: 9999;
-    position: fixed; /* Fixed position to stay at the top */
+    position: fixed;
+    /* Fixed position to stay at the top */
     top: 0;
     left: 0;
     right: 0;
@@ -58,25 +64,133 @@ body, html {
 .logo a {
     color: white;
     font-weight: 700;
-    text-decoration: none; /* Remove underline from logo */
-    font-size: 1.5rem; /* Adjust font size */
+    text-decoration: none;
+    /* Remove underline from logo */
+    font-size: 1.5rem;
+    /* Adjust font size */
 }
 
 .menu {
     display: flex;
     gap: 40px;
-    list-style-type: none; /* Remove default list styles */
-    margin-right: 80px; /* Margin for the last menu item */
+    list-style-type: none;
+    /* Remove default list styles */
+    margin-right: 80px;
+    /* Margin for the last menu item */
 }
 
 .menu li a {
     color: white;
-    text-decoration: none; /* Remove underline from menu links */
-    padding: 10px; /* Add padding around menu items */
-    transition: all 0.3s ease; /* Smooth transition effect */
+    text-decoration: none;
+    /* Remove underline from menu links */
+    padding: 10px;
+    /* Add padding around menu items */
+    transition: all 0.3s ease;
+    /* Smooth transition effect */
 }
 
 /* HOME SECTION */
+
+#home {
+    width: 100%;
+    height: calc(100vh - 160px);
+    display: flex;
+    margin-top: 80px;
+    padding: 50px;
+    gap: 20px;
+}
+
+.home-left {
+    /* border: 2px solid green; */
+    width: 50%;
+    /* padding: auto; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+
+.home-left h5,
+h1,
+h3 {
+    /* line-height: 0px; */
+    color: var(--theme-text-color);
+    font-weight: 500;
+    margin: 0;
+    /* margin: ; */
+}
+
+.home-left h5 {
+    font-size: 25px;
+}
+
+.home-left h1 {
+    font-size: 5rem;
+    font-weight: 600;
+    white-space: nowrap;
+    line-height: 4.5rem;
+}
+
+.home-left h3 {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+
+
+
+/* CSS */
+.button-37 {
+    background-color: transparent;
+    border: 2px solid var(--dark-blue);
+    border-radius: 4px;
+    /* box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0; */
+    /* box-sizing: border-box; */
+    color: #fff;
+    cursor: pointer;
+    /* font-famil; */
+    font-size: 16px;
+    font-weight: 500;
+    outline: none;
+    outline: 0;
+    padding: 10px 25px;
+    text-align: center;
+    transform: translateY(0);
+    transition: transform 150ms, box-shadow 150ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-37:hover {
+    box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+    transform: translateY(-2px);
+}
+
+.home-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-right .my-img {
+    width: 60%;
+    height: fit-content;
+    /* border: 5px solid white; */
+    padding: 5px;
+    animation: myImgGlow 3s ease-in-out infinite;
+}
+
+
+.home-right .my-img img {
+    object-fit: cover;
+    width: 100%;
+
+}
+
+
 
 /* HOME SECTION */
 
@@ -84,6 +198,7 @@ body, html {
     .navbar {
         padding: 0 15px;
     }
+
     .menu {
         margin-right: 30px;
         gap: 25px;
@@ -100,8 +215,10 @@ body, html {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: var(--blur-background-color); /* Apply semi-transparent background color */
-        backdrop-filter: blur(10px); /* Apply blur effect */
+        background-color: var(--blur-background-color);
+        /* Apply semi-transparent background color */
+        backdrop-filter: blur(10px);
+        /* Apply blur effect */
         margin: 0;
         gap: 30px;
         transition: 0.3s ease-in-out;
@@ -126,4 +243,51 @@ body, html {
         top: 6%;
         right: 8%;
     }
+
+    /* HOME SECTION */
+
+    #home {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        gap: 0;
+        padding: 0;
+        height: fit-content;
+        width: 98%;
+    }
+
+    .home-left,
+    .home-right {
+        width: 100%;
+
+    }
+
+    .home-left {
+        align-items: center;
+        order: 1;
+    }
+
+    .button-37 {
+        padding: 10px 30px;
+    }
+
+    .home-right {
+
+        margin-bottom: 20px;
+    }
+
+    .home-right .my-img {
+        width: 40%;
+
+    }
+
+    .home-left h1 {
+        font-size: 4rem;
+        word-wrap: wrap;
+
+    }
+
+    /* HOME SECTION */
 }

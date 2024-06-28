@@ -5,7 +5,7 @@ const menuLinks = document.querySelectorAll(".menu-link");
 
 
 toggleBtn.addEventListener("click", () => {
-    console.log("working")
+    // console.log("working")
     if (menu.classList.contains("active")) {
         menu.classList.remove("active");
     } else {
