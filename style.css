@@ -11,6 +11,7 @@
     --lato-font: "Lato", sans-serif;
     --poppins-font: "Poppins", sans-serif;
     --roboto-fonts: "Roboto", sans-serif;
+    --bebas-fonts:"Bebas Neue", sans-serif;
     --blur-background-color: rgba(1, 6, 15, 0.5);
     /* Semi-transparent black */
 }
@@ -18,8 +19,9 @@
 body,
 html {
     width: 100%;
-    height: 100%;
-    background-color: var(--black-color-main);
+    height: 200vh;
+    /* background-color: var(--black-color-main); */
+    background-color: black;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
@@ -49,6 +51,7 @@ html {
     top: 0;
     left: 0;
     right: 0;
+    margin-bottom: 30px;
 }
 
 #toggle-btn {
@@ -91,7 +94,7 @@ html {
 
 /* HOME SECTION */
 
-#home {
+/* #home {
     width: 100%;
     height: calc(100vh - 160px);
     display: flex;
@@ -100,26 +103,26 @@ html {
     gap: 20px;
 }
 
-.home-left {
-    /* border: 2px solid green; */
-    width: 50%;
-    /* padding: auto; */
+/* .home-left {
+     border: 2px solid green; 
+     width: 50%;
+     padding: auto; 
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: flex-start;
-}
+} 
 
 
 
 .home-left h5,
 h1,
 h3 {
-    /* line-height: 0px; */
+   
     color: var(--theme-text-color);
     font-weight: 500;
     margin: 0;
-    /* margin: ; */
+  
 }
 
 .home-left h5 {
@@ -137,20 +140,19 @@ h3 {
     font-size: 30px;
     margin: 10px 0;
 }
-
+ */
 
 
 
 /* CSS */
-.button-37 {
+/* .button-37 {
     background-color: transparent;
     border: 2px solid var(--dark-blue);
     border-radius: 4px;
-    /* box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0; */
-    /* box-sizing: border-box; */
+    
     color: #fff;
     cursor: pointer;
-    /* font-famil; */
+   
     font-size: 16px;
     font-weight: 500;
     outline: none;
@@ -178,7 +180,7 @@ h3 {
 .home-right .my-img {
     width: 60%;
     height: fit-content;
-    /* border: 5px solid white; */
+  
     padding: 5px;
     animation: myImgGlow 3s ease-in-out infinite;
 }
@@ -189,6 +191,37 @@ h3 {
     width: 100%;
 
 }
+ */
+
+ #home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    width: 100%;
+    min-height: 100vh;
+    height: fit-content;
+    margin-top: 40px;
+    text-align: left;
+    overflow: hidden;
+    /* border: 2px solid green; */
+    
+}
+
+#home h1{
+    /* width: 80%; */
+    /* height: 100%; */
+    /* border: 2px solid red; */
+    padding: 0 6rem;
+    /* color:var(--theme-text-color); */
+    color: white;
+    font-size: 5rem;
+    font-family: var(--bebas-fonts);
+    letter-spacing: 1.5px;
+    /* transform: translateY(-2rem); */
+}
+
+
 
 
 
@@ -244,50 +277,22 @@ h3 {
         right: 8%;
     }
 
-    /* HOME SECTION */
-
-    #home {
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        margin-top: 100px;
-        gap: 0;
-        padding: 0;
-        height: fit-content;
-        width: 98%;
-    }
-
-    .home-left,
-    .home-right {
-        width: 100%;
-
-    }
-
-    .home-left {
-        align-items: center;
-        order: 1;
-    }
-
-    .button-37 {
-        padding: 10px 30px;
-    }
-
-    .home-right {
-
-        margin-bottom: 20px;
-    }
-
-    .home-right .my-img {
-        width: 40%;
-
-    }
-
-    .home-left h1 {
-        font-size: 4rem;
-        word-wrap: wrap;
-
-    }
 
     /* HOME SECTION */
+
+    #home h1{
+        padding: 0 2rem;
+        font-size: 3.7rem;
+        /* white-space: nowrap; */
+    }
+ 
+
+    /* HOME SECTION */
+}
+
+@media (max-width:480px){
+    #home h1 {
+        padding: 0 20px;
+        font-size: 3rem;
+    }
 }
