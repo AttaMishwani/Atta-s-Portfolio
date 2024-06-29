@@ -4,7 +4,7 @@
     --black-color-main: #010B13;
     --light-yellow: #F9F871;
     --dark-blue: #3576f8;
-    --theme-text-color: #e3ddc7;
+    --theme-text-color: white;
     --theme-color-one: #2a3a5f;
     --theme-color-two: #010b13;
     --theme-color-three: #4d76a0;
@@ -19,9 +19,10 @@
 body,
 html {
     width: 100%;
-    height: 200vh;
+    height: 100%;
     /* background-color: var(--black-color-main); */
     background-color: black;
+    color: var(--theme-text-color);
     overflow-x: hidden;
     margin: 0;
     padding: 0;
@@ -94,105 +95,6 @@ html {
 
 /* HOME SECTION */
 
-/* #home {
-    width: 100%;
-    height: calc(100vh - 160px);
-    display: flex;
-    margin-top: 80px;
-    padding: 50px;
-    gap: 20px;
-}
-
-/* .home-left {
-     border: 2px solid green; 
-     width: 50%;
-     padding: auto; 
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-start;
-} 
-
-
-
-.home-left h5,
-h1,
-h3 {
-   
-    color: var(--theme-text-color);
-    font-weight: 500;
-    margin: 0;
-  
-}
-
-.home-left h5 {
-    font-size: 25px;
-}
-
-.home-left h1 {
-    font-size: 5rem;
-    font-weight: 600;
-    white-space: nowrap;
-    line-height: 4.5rem;
-}
-
-.home-left h3 {
-    font-size: 30px;
-    margin: 10px 0;
-}
- */
-
-
-
-/* CSS */
-/* .button-37 {
-    background-color: transparent;
-    border: 2px solid var(--dark-blue);
-    border-radius: 4px;
-    
-    color: #fff;
-    cursor: pointer;
-   
-    font-size: 16px;
-    font-weight: 500;
-    outline: none;
-    outline: 0;
-    padding: 10px 25px;
-    text-align: center;
-    transform: translateY(0);
-    transition: transform 150ms, box-shadow 150ms;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-}
-
-.button-37:hover {
-    box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
-    transform: translateY(-2px);
-}
-
-.home-right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.home-right .my-img {
-    width: 60%;
-    height: fit-content;
-  
-    padding: 5px;
-    animation: myImgGlow 3s ease-in-out infinite;
-}
-
-
-.home-right .my-img img {
-    object-fit: cover;
-    width: 100%;
-
-}
- */
-
  #home{
     display: flex;
     justify-content: center;
@@ -201,7 +103,7 @@ h3 {
     width: 100%;
     min-height: 100vh;
     height: fit-content;
-    margin-top: 40px;
+    margin-top: 30px;
     text-align: left;
     overflow: hidden;
     /* border: 2px solid green; */
@@ -215,9 +117,9 @@ h3 {
     padding: 0 6rem;
     /* color:var(--theme-text-color); */
     color: white;
-    font-size: 5rem;
+    font-size: 4.9rem;
     font-family: var(--bebas-fonts);
-    letter-spacing: 1.5px;
+    letter-spacing: 2px;
     /* transform: translateY(-2rem); */
 }
 
@@ -226,6 +128,50 @@ h3 {
 
 
 /* HOME SECTION */
+
+/* ABOUT SECTION */
+
+#about{
+    /* border: 2px solid red; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-content{
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    gap: 40px;
+    /* margin: auto; */
+    
+}
+
+.about-left{
+    /* border: 2px solid yellow; */
+    width: 38%;
+}
+
+.about-right{
+    /* border: 2px solid pink; */
+    width: 50%;
+}
+
+.about-right-heading{
+    font-family: var(--bebas-fonts);
+    font-size: 5rem;
+    margin: 0;
+    letter-spacing: 4px;
+}
+.about-right-txt{
+    margin: 0;
+    letter-spacing: 0.5px;
+    color:#c4bebe;
+}
+/* ABOUT SECTION */
 
 @media (max-width: 880px) {
     .navbar {
@@ -280,7 +226,7 @@ h3 {
 
     /* HOME SECTION */
 
-    #home h1{
+    #home .split{
         padding: 0 2rem;
         font-size: 3.7rem;
         /* white-space: nowrap; */
@@ -291,8 +237,14 @@ h3 {
 }
 
 @media (max-width:480px){
-    #home h1 {
+    #home .split {
         padding: 0 20px;
         font-size: 3rem;
+    }
+}
+
+@media (max-width:400px){
+    #home .split{
+  font-size: 2.5rem;
     }
 }
