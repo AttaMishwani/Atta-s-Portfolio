@@ -101,9 +101,10 @@ html {
     align-items: center;
     /* border: 2px solid red; */
     width: 100%;
-    min-height: 100vh;
-    height: fit-content;
+    height: 100vh;
+    /* height: fit-content; */
     margin-top: 30px;
+    margin-bottom: 4rem;
     text-align: left;
     overflow: hidden;
     /* border: 2px solid green; */
@@ -120,6 +121,7 @@ html {
     font-size: 4.9rem;
     font-family: var(--bebas-fonts);
     letter-spacing: 2px;
+    user-select: none;
     /* transform: translateY(-2rem); */
 }
 
@@ -137,6 +139,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* margin-bottom: 3rem; */
 }
 
 #about-content{
@@ -144,15 +147,16 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 100%;
     gap: 40px;
+    padding: 0 20px;
     /* margin: auto; */
     
 }
 
 .about-left{
     /* border: 2px solid yellow; */
-    width: 38%;
+    width: 40%;
 }
 
 .about-right{
@@ -162,14 +166,19 @@ html {
 
 .about-right-heading{
     font-family: var(--bebas-fonts);
-    font-size: 5rem;
+    font-size: 3.1rem;
     margin: 0;
     letter-spacing: 4px;
 }
 .about-right-txt{
     margin: 0;
     letter-spacing: 0.5px;
-    color:#c4bebe;
+    color:#ebe5e5;
+    font-weight: 400;
+    font-family: var(--poppins-font);
+    user-select: none;
+    line-height: 20px;
+
 }
 /* ABOUT SECTION */
 
@@ -226,7 +235,7 @@ html {
 
     /* HOME SECTION */
 
-    #home .split{
+    #home .home-txt{
         padding: 0 2rem;
         font-size: 3.7rem;
         /* white-space: nowrap; */
@@ -234,17 +243,36 @@ html {
  
 
     /* HOME SECTION */
+
+    /* ABOUT SECTION */
+
+    #about-content{
+        flex-direction: column;
+    }
+
+    .about-right{
+        width: 100%;
+    }
+
+    .about-left{
+        width: 70%;
+    }
+
+    .about-right-heading{
+        font-size: 2.9rem;
+    }
+    /* ABOUT SECTION */
 }
 
 @media (max-width:480px){
-    #home .split {
+    #home .home-txt {
         padding: 0 20px;
         font-size: 3rem;
     }
 }
 
 @media (max-width:400px){
-    #home .split{
+    #home .home-txt{
   font-size: 2.5rem;
     }
 }

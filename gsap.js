@@ -1,7 +1,7 @@
-let split = document.getElementsByClassName("split")
+// let split = document.getElementsByClassName("split")
 
 
-gsap.from(split,        { 
+gsap.from(".home-txt",        { 
     duration: 1,
     opacity: 0,
     x: "-100%", // Reveal from left to center
