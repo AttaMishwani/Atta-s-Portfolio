@@ -4,6 +4,8 @@ body{
     height: 100%;
 }
 
+Hello! I'm Atta Ur Rehman, a passionate self-taught frontend developer from Pakistan. With a solid foundation in HTML, CSS, and JavaScript, I create visually appealing and user-friendly websites. I'm proficient in using Bootstrap for responsive design and skilled in version control with Git and GitHub. Currently, I am expanding my expertise by learning React.js to develop more dynamic and interactive web applications. My dedication to continuous learning and growth drives me to stay updated with the latest industry trends and technologies. I am excited about the opportunity to collaborate on innovative projects and bring creative ideas to life through code.
+
 create a picture of a web developer posing on his right shoulder for picture his hands are in lock the image width and height should be 500px and image quality should be the best  the image corner should not be round
 
 "A Frontend Developer building beautiful and functional websites with attention to detail and user experience"

@@ -20,3 +20,30 @@ gsap.from(".navbar",        {
 }
 )
 
+// ABOUT SECTION
+// gsap.registerPlugin(ScrollTrigger);
+
+// gsap.from(".about-left", {
+//   scrollTrigger: {
+//     trigger: ".about-left",
+//     start: "top 80%", // Adjust based on when you want the animation to start
+//   },
+//   top: "30%",
+//   duration: 1,
+//   opacity: 0,
+//   x: "-100%", // Reveal from left to center
+//   ease: "power2.out"
+// });
+// gsap.from(".about-right", {
+//   scrollTrigger: {
+//     trigger: ".about-left",
+//     start: "top 80%", // Adjust based on when you want the animation to start
+//   },
+//   top: "30%",
+//   duration: 1,
+//   opacity: 0,
+//   x: "100%", // Reveal from left to center
+//   ease: "power2.out"
+// });
+
+// ABOUT SECTION
