@@ -41,22 +41,22 @@
 
   <body>
     <main>
-      <header>
+      
         <nav class="navbar">
           <div class="logo">
             <a href="#">Atta Ur Rehman</a>
           </div>
           <ul class="menu">
             <img src="imgs/letter-x.png" alt="" id="xmark" />
-            <li class="menu-link"><a href="#">Home</a></li>
-            <li class="menu-link"><a href="#">About</a></li>
-            <li class="menu-link"><a href="#">Skills</a></li>
-            <li class="menu-link"><a href="#">Projects</a></li>
-            <li class="menu-link"><a href="#">Contact</a></li>
+            <li class="menu-link"><a href="#home">Home</a></li>
+            <li class="menu-link"><a href="#about">About</a></li>
+            <li class="menu-link"><a href="#skills">Skills</a></li>
+            <li class="menu-link"><a href="#projects">Projects</a></li>
+            <li class="menu-link"><a href="#contact">Contact</a></li>
           </ul>
           <img src="imgs/menu.png" alt="" id="toggle-btn" />
         </nav>
-      </header>
+      
 
       <!-- HOME SECTION -->
       <section id="home">
@@ -161,11 +161,46 @@
       <!-- PROJECTS SECTION -->
 
       <section id="contact">
-
         <h1 class="section-heading">CONTACT</h1>
         <div class="contact-container">
-          <div class="contact-subsections contact-left"><img src="imgs/contactLeftImg.jpg" alt=""></div>
-          <div class="contact-subsections contact-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque incidunt commodi corrupti deserunt modi perferendis? Dicta commodi cupiditate sequi magnam cum laborum explicabo doloremque omnis iusto, cumque nesciunt obcaecati esse deserunt, voluptates placeat corrupti tempore! Illum, quo laudantium nemo commodi eaque cupiditate aperiam nihil facilis hic rem, harum quam temporibus!</div>
+          <div class="contact-subsections contact-left">
+            <img src="imgs/contactLeftImg.jpg" alt="" />
+          </div>
+          <div class="contact-subsections contact-right">
+            <div class="social-links">
+              <a href="" class="social-link"
+                ><img src="imgs/linkedin-logo-24.png" alt=""
+              /></a>
+              <a href="" class="social-link"
+                ><img src="imgs/instagram-alt-logo-24.png" alt=""
+              /></a>
+              <a href="" class="social-link"
+                ><img src="imgs/github.png" alt=""
+              /></a>
+            </div>
+
+            <div id="success-popup" class="popup">Message sent successfully!</div>
+            <div id="error-popup" class="popup">Error sending message.</div>
+            
+            <form id="contact-form">
+              <h2 class="contact-heading">Get in touch.</h2>
+              <p class="contact-txt">I would love to hear from you</p>
+              <div class="input-container">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="input-container">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="input-container">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="10" required></textarea>
+              </div>
+              <button id="submit-btn" type="submit">Send</button>
+            </form>
+            
+          </div>
         </div>
       </section>
     </main>
@@ -174,6 +209,6 @@
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
     <script src="script.js"></script>
-    <script src="mail.js"></script>
+    
   </body>
 </html>
