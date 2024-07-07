@@ -1,18 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
-  let navbar = document.querySelector(".navbar");
-
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 100) {
-      navbar.classList.add("active");
-      console.log("class added");
-    } else {
-      navbar.classList.remove("active");
-      console.log("class removed");
-    }
-  });
-});
-
-
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -66,6 +51,7 @@ console.log("form is working")
     });
   }
 
+
   if (toggleBtn) {
     toggleBtn.addEventListener("click", () => {
       if (menu.classList.contains("active")) {
@@ -91,4 +77,4 @@ console.log("form is working")
   }
 });
 
-
+console.log("hello")

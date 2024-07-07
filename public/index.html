@@ -6,14 +6,6 @@
     <title>Responsive Navbar</title>
     <link rel="stylesheet" href="style.css" />
 
-    <!-- Link to your CSS file -->
-    <!-- lato -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900&display=swap"
-      rel="stylesheet"
-    />
     <!-- poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,13 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <!-- roboto -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
+  
     <!-- bebas neue -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -35,28 +21,25 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
       rel="stylesheet"
     />
-    <!-- font awesome cdn -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+  
   </head>
 
   <body>
     <main>
-      
-        <nav class="navbar">
-          <div class="logo">
-            <a href="#">Atta Ur Rehman</a>
-          </div>
-          <ul class="menu">
-            <img src="imgs/letter-x.png" alt="" id="xmark" />
-            <li class="menu-link"><a href="#home">Home</a></li>
-            <li class="menu-link"><a href="#about">About</a></li>
-            <li class="menu-link"><a href="#skills">Skills</a></li>
-            <li class="menu-link"><a href="#projects">Projects</a></li>
-            <li class="menu-link"><a href="#contact">Contact</a></li>
-          </ul>
-          <img src="imgs/menu.png" alt="" id="toggle-btn" />
-        </nav>
-      
+      <nav class="navbar" id="nav">
+        <div class="logo">
+          <a href="#">Atta Ur Rehman</a>
+        </div>
+        <ul class="menu">
+          <img src="imgs/letter-x.png" alt="" id="xmark" />
+          <li class="menu-link"><a href="#home">Home</a></li>
+          <li class="menu-link"><a href="#about">About</a></li>
+          <li class="menu-link"><a href="#skills">Skills</a></li>
+          <li class="menu-link"><a href="#projects">Projects</a></li>
+          <li class="menu-link"><a href="#contact">Contact</a></li>
+        </ul>
+        <img src="imgs/menu.png" alt="" id="toggle-btn" />
+      </nav>
 
       <!-- HOME SECTION -->
       <section id="home">
@@ -139,23 +122,26 @@
         <h1 class="section-heading">PROJECTS</h1>
         <div class="projects-container">
           <div class="project-item">
-            <img src="imgs/intelsoft.jpg" alt="" />
+            <img src="imgs/intelsoftnew.png" alt="" />
           </div>
           <div class="project-item">
-            <img src="imgs/intelsoft.jpg" alt="" />
+            <img src="imgs/rehmanPortfolio.png" alt="" />
           </div>
           <div class="project-item">
-            <img src="imgs/intelsoft.jpg" alt="" />
+            <img src="imgs/golfrange5.png" alt="" />
           </div>
           <div class="project-item">
-            <img src="imgs/intelstore.jpg" alt="" />
+            <img src="imgs/intelstore- techsini.com.png" alt="" />
           </div>
           <div class="project-item">
-            <img src="imgs/intelstore.jpg" alt="" />
+            <img src="imgs/SignUpPgae.png" alt="" />
           </div>
           <div class="project-item">
-            <img src="imgs/intelstore.jpg" alt="" />
+            <img src="imgs/velox-min.png" alt="" />
           </div>
+          <!-- <div class="project-item">
+            <video src="imgs/Galaxy-Fold2-atta2006.github.io-tUt4hZ9jO4.webm" autoplay mute loop></video>
+          </div> -->
         </div>
       </section>
       <!-- PROJECTS SECTION -->
@@ -168,38 +154,53 @@
           </div>
           <div class="contact-subsections contact-right">
             <div class="social-links">
-              <a href="" class="social-link"
+              <a
+                href="https://www.linkedin.com/in/atta-ur-rehman-mishwani-964a58317"
+                target="_blank"
+                class="social-link"
                 ><img src="imgs/linkedin-logo-24.png" alt=""
               /></a>
-              <a href="" class="social-link"
+              <a
+                href="https://www.instagram.com/itsatta00/"
+                target="_blank"
+                class="social-link"
                 ><img src="imgs/instagram-alt-logo-24.png" alt=""
               /></a>
-              <a href="" class="social-link"
+              <a
+                href="https://github.com/Atta2006"
+                target="_blank"
+                class="social-link"
                 ><img src="imgs/github.png" alt=""
               /></a>
             </div>
 
-            <div id="success-popup" class="popup">Message sent successfully!</div>
+            <div id="success-popup" class="popup">
+              Message sent successfully!
+            </div>
             <div id="error-popup" class="popup">Error sending message.</div>
-            
+
             <form id="contact-form">
               <h2 class="contact-heading">Get in touch.</h2>
               <p class="contact-txt">I would love to hear from you</p>
               <div class="input-container">
                 <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" required />
               </div>
               <div class="input-container">
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" required />
               </div>
               <div class="input-container">
                 <label for="message">Message</label>
-                <textarea id="message" name="message" rows="10" required></textarea>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="10"
+                  required
+                ></textarea>
               </div>
               <button id="submit-btn" type="submit">Send</button>
             </form>
-            
           </div>
         </div>
       </section>
@@ -209,6 +210,5 @@
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
     <script src="script.js"></script>
-    
   </body>
 </html>
