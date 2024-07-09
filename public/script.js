@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (form) {
     form.addEventListener('submit', async (event) => {
       event.preventDefault(); // Prevent the default form submission
-console.log("form is working")
+      console.log("form is working")
       const formData = new FormData(form);
       const data = {};
       formData.forEach((value, key) => {
@@ -77,4 +77,6 @@ console.log("form is working")
   }
 });
 
-console.log("hello")
+
+
+
