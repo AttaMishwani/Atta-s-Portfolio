@@ -280,6 +280,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   width: 100%;
   margin-bottom: 20px;
   user-select: none;
@@ -292,7 +293,7 @@ section {
   display: grid;
   place-items: center;
   border: 2px solid var(--txt-clr-one);
-  margin: 0 10px;
+  margin: 10px;
   transition: 0.2s ease;
 }
 
@@ -311,6 +312,7 @@ footer {
   color: #fff;
   text-align: center;
   padding: 20px 0;
+  border-top: 2px solid rgb(17, 17, 17);
 }
 
 .footer-container {
@@ -322,6 +324,7 @@ footer {
 footer p {
   margin: 0;
   font-size: 16px;
+  color: rgb(104, 102, 102);
 }
 
 /* Media Queries */
