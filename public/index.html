@@ -4,9 +4,7 @@
 <meta charset=UTF-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
 <title>Atta's Portfolio</title>
-
-  <!-- Favicon -->
-  <link rel="icon" href="imgs/favicon.png" type="image/png" />
+<link rel=icon href=imgs/favicon.png type=image/png>
 <link rel=stylesheet href=style.css>
 <link rel=preconnect href=https://fonts.googleapis.com>
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
@@ -122,20 +120,20 @@ Hello! I'm Atta Ur Rehman, a passionate self-taught frontend developer from Paki
 Message sent successfully!
 </div>
 <div id=error-popup class=popup>Error sending message.</div>
-<form id=contact-form>
+<form id=contact-form autocomplete=off>
 <h2 class=contact-heading>Get in touch.</h2>
 <p class=contact-txt>I would love to hear from you</p>
 <div class=input-container>
 <label for=name>Name</label>
-<input id=name name=name required>
+<input id=name name=name required autocomplete=off>
 </div>
 <div class=input-container>
 <label for=email>Email</label>
-<input type=email id=email name=email required>
+<input type=email id=email name=email required autocomplete=off>
 </div>
 <div class=input-container>
 <label for=message>Message</label>
-<textarea id=message name=message rows=10 required></textarea>
+<textarea id=message name=message rows=10 required autocomplete=off></textarea>
 </div>
 <button id=submit-btn type=submit>Send</button>
 </form>
