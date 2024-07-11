@@ -205,6 +205,10 @@ section{
   width: 50%;
 }
 
+.about-heading{
+  margin: 0;
+}
+
 .about-right-txt {
   margin: 0;
   letter-spacing: 0.5px;
@@ -212,7 +216,7 @@ section{
   font-weight: 400;
   font-family: var(--poppins-font);
   user-select: none;
-  line-height: 20px;
+  line-height: 22px;
 }
 
 /* SKILLS SECTION */
@@ -220,7 +224,7 @@ section{
   width: 100%;
   text-align: left;
   height: fit-content;
-  margin: 4rem 0;
+  margin: 8rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -250,8 +254,14 @@ section{
   background-color: rgba(37, 37, 37, 0.267);
   backdrop-filter: blur(10px);
   border-radius: 8px;
+  border: 2px solid transparent;
+  transition: 0.3s ease all;
+
 }
 
+.skill-item:hover{
+  border: 2px solid  white;
+}
 .skill-item img {
   width: 30%;
 }
