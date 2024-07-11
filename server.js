@@ -1,13 +1,15 @@
-// server.js
-
 require('dotenv').config(); // Load environment variables from .env file
 const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
 const path = require('path');
+const cors = require('cors');
 
 const app = express();
 const PORT = process.env.PORT || 4000;
+
+// Enable CORS for all routes
+app.use(cors());
 
 // Serve static files from the "public" directory
 app.use(express.static(path.join(__dirname, 'public')));
