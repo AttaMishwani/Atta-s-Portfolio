@@ -330,7 +330,7 @@ footer p {
 /* Media Queries */
 @media (max-width: 1000px) {
   body,html{
-    overflow: hidden;
+    overflow-x: hidden;
   }
   #home h1 {
     font-size: 4.5rem;
