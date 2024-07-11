@@ -599,6 +599,10 @@ footer p {
   footer p {
     font-size: 14px;
   }
+
+  .skill-item:hover{
+    border: 2px solid transparent;
+  }
 }
 
 @media (max-width: 480px) {
