@@ -1,7 +1,7 @@
 
 # Atta-s-Portfolio
 
-live link : https://atta2006.github.io/Atta-s-Portfolio/
+live link : https://attamishwani.github.io/Atta-s-Portfolio/
 
 
 
