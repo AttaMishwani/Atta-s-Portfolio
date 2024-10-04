@@ -1,6 +1,6 @@
 :root {
   --black-color-one: #000;
-  --black-color-main: #010B13;
+  --black-color-main: #010b13;
   --theme-text-color: white;
   --txt-clr-one: rgb(155, 150, 150);
   --theme-color-one: #2a3a5f;
@@ -58,7 +58,8 @@ section {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   opacity: 0;
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, visibility 0.3s;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out,
+    visibility 0.3s;
 }
 
 .popup.active {
@@ -184,7 +185,7 @@ section {
   font-weight: 400;
   font-family: var(--poppins-font);
   user-select: none;
-  line-height: 22px;
+  line-height: 25px;
 }
 
 /* SKILLS SECTION */
@@ -245,6 +246,7 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   width: 80%;
   margin: 0 auto;
+  justify-items: center; /* Aligns items horizontally */
 }
 
 .project-item {
@@ -329,7 +331,8 @@ footer p {
 
 /* Media Queries */
 @media (max-width: 1000px) {
-  body,html{
+  body,
+  html {
     overflow-x: hidden;
   }
   #home h1 {
