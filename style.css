@@ -19,6 +19,7 @@ html {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
   box-sizing: border-box;
   font-family: var(--poppins-font);
   scroll-behavior: smooth;
@@ -73,14 +74,23 @@ section {
   display: flex;
   width: 100%;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 50px;
-  height: 80px;
+  justify-content: center;
+
+
   background-color: transparent;
   z-index: 999;
-  top: 0;
-  left: 0;
-  right: 0;
+
+}
+
+#navbar-content {
+  width: 1200px;
+  max-width: 1200px;
+  /* border: 1px solid red; */
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
 }
 
 .navbar.scrolled {
@@ -108,7 +118,7 @@ section {
   display: flex;
   gap: 40px;
   list-style-type: none;
-  margin-right: 80px;
+  /* margin-right: 80px; */
 }
 
 .menu li a {
@@ -133,19 +143,25 @@ section {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   margin-bottom: 4rem;
   text-align: left;
 }
 
+#home-text-container {
+  width: 1200px;
+  max-width: 1200px;
+  /* border: 2px solid red; */
+}
+
 #home h1 {
-  padding: 0 6rem;
+  /* padding: 0 6rem; */
   color: white;
   font-size: 4.9rem;
   font-family: var(--bebas-fonts);
   letter-spacing: 2px;
   user-select: none;
-  transform: translateY(-3rem);
+  /* transform: translateY(-3rem); */
 }
 
 /* ABOUT SECTION */
@@ -159,15 +175,16 @@ section {
 
 #about-content {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
+  max-width: 1200px;
   gap: 40px;
-  padding: 0 20px;
+  /* padding: 0 20px; */
 }
 
 .about-left {
-  width: 40%;
+  width: 50%;
 }
 
 .about-right {
@@ -186,6 +203,7 @@ section {
   font-family: var(--poppins-font);
   user-select: none;
   line-height: 25px;
+  text-align: justify;
 }
 
 /* SKILLS SECTION */
@@ -202,10 +220,10 @@ section {
 
 .skills-item-container {
   display: grid;
-  width: 80%;
+  width: 100%;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  padding: 0 30px;
   margin-bottom: 3rem;
+  max-width: 1200px;
 }
 
 .skill-item {
@@ -239,14 +257,20 @@ section {
   height: fit-content;
   padding-bottom: 3rem;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .projects-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  width: 80%;
-  margin: 0 auto;
-  justify-items: center; /* Aligns items horizontally */
+  width: 100%;
+  /* margin: 0 auto; */
+  justify-items: center;
+  max-width: 1200px;
+  /* Aligns items horizontally */
 }
 
 .project-item {
@@ -330,13 +354,27 @@ footer p {
 }
 
 /* Media Queries */
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
+
   body,
   html {
     overflow-x: hidden;
   }
+
   #home h1 {
     font-size: 4.5rem;
+  }
+
+  div#navbar-content {
+    padding: 0 1rem;
+  }
+
+  div#home-text-container {
+    padding: 0 1rem;
+  }
+
+  div#navbar-content {
+    padding: 10px 0px;
   }
 }
 
@@ -362,15 +400,16 @@ footer p {
 
   .menu {
     position: absolute;
-    right: -100%;
+    right: -100vw;
+    background-color: black;
     top: 0;
     width: 100%;
     height: 100vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--blur-background-color);
-    backdrop-filter: blur(10px);
+
+
     margin: 0;
     gap: 30px;
     transition: 0.3s ease-in-out;
@@ -397,7 +436,7 @@ footer p {
   }
 
   #home .home-txt {
-    padding: 0 2rem;
+
     font-size: 3.7rem;
   }
 
@@ -407,6 +446,10 @@ footer p {
 
   .about-right {
     width: 100%;
+
+
+    padding: 0 1rem;
+
   }
 
   .about-left {
@@ -429,11 +472,26 @@ footer p {
   .skill-item:hover {
     border: 2px solid transparent;
   }
+
+  .skills-item-container {
+
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 0 17px;
+
+  }
+
+  .projects-container {
+
+    width: 100%;
+
+    padding: 0 13px;
+  }
 }
 
 @media (max-width: 480px) {
   #home .home-txt {
-    padding: 0 20px;
+    /* padding: 0 20px; */
     font-size: 3rem;
     margin: 0;
   }
